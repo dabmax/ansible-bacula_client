@@ -1,0 +1,10 @@
+---
+- name: delivery file configuration bacula-fd
+  template:
+     src: bacula-fd.j2
+     dest: /etc/bacula/bacula-fd.conf
+     owner: root
+     group: root
+     mode: 644
+  notify:
+        - restart bacula-fd

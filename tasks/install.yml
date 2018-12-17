@@ -1,0 +1,5 @@
+---
+- name: install bacula client
+  yum:
+    name: bacula-client
+    state: present

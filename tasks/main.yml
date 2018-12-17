@@ -1,0 +1,10 @@
+---
+# tasks file for bacula_client
+- name: includeding install bacula-client
+  import_tasks: install.yml
+
+- name: includeding delivery config file
+  import_tasks: conf.yml
+
+- name: includeding configuration service bacula-fd
+  import_tasks: service.yml

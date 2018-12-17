@@ -1,0 +1,6 @@
+---
+- name: configuration service bacula-fd
+  service:
+    name: bacula-fd
+    state: started
+    enabled: yes
